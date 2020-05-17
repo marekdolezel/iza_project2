@@ -24,24 +24,26 @@ struct NewProjectOrTaskSheet: View {
     @State var taskOrigin: Task?
     @State var projectSelection: Project?
 
-    
-    
     struct ProjectPickerItem {
         let project: Project?
     }
 
-    
     // MARK: passed arguments to this View
     @Binding var showingThisSheet: Bool
     var showingProjectTorTaskF: Bool
     @State var projectItem: Project?
     
+    // check if the user entered all the required information
+    //      Project: name, description
+    //      Task: name, description, and project associated with this task
     var finishedEditing: Bool {
         if showingProjectTorTaskF == true {
+            // check required info for project
             if name == "" || desc == "" {
                 return false
             }
         } else {
+            // check required info for task
             if name == "" || desc == "" || (projectSelection == nil && projectItem == nil) {
                 return false
             }
@@ -63,12 +65,6 @@ struct NewProjectOrTaskSheet: View {
                         Button(action: {self.urgency.toggle()}) {Image(systemName: urgency ? "flag.fill" : "flag")}
                     }
                     if projectItem == nil {
-//                        Picker("Project", selection: $projectSelection) {
-//                            ForEach(projects, id:\.id) {project in
-//                                Text(project.name!).tag(project)
-//                            }
-//
-//                        }
                         if showingProjectTorTaskF == false {
                             Picker("Project", selection: $projectSelection) {
                                 ForEach(projects.map(ProjectPickerItem.init), id: \.project) {
@@ -86,12 +82,10 @@ struct NewProjectOrTaskSheet: View {
             .navigationBarItems(
                 leading: Button(action: {self.showingThisSheet = false}) {Text("Cancel")},
                 trailing: Button(action: {
-                    // this is an Add button in sheet
-                    
                     // When the user fills in all the required information, swiftui stores that information into @State variables
                     
-                    // the code below stores the entered information to CoreData
                     if self.showingProjectTorTaskF == true {
+                        // all the required information for project was filled in and the user clicked the 'add' button
                         let project = Project(context: self.managedObjectContext)
                         project.id = UUID()
                         project.name = self.name
@@ -103,6 +97,7 @@ struct NewProjectOrTaskSheet: View {
 
                         try? self.managedObjectContext.save()
                     } else {
+                        // all the required information for a task was filled in and the user clicked the 'add' button
                         let task = Task(context: self.managedObjectContext)
                         task.id = UUID()
                         task.name = self.name
@@ -112,6 +107,9 @@ struct NewProjectOrTaskSheet: View {
                         task.isFinished = false
                         task.priority = 0
                         
+                        // if we got to this sheet from a project, then projectItem contains reference to that project. Therefore we can
+                        // link newly created task with existing project (task.origin), and add that task to project
+                        // otherwise
                         if let _project = self.projectItem {
                             task.origin = _project
                             _project.addToTasks(task)
@@ -119,29 +117,10 @@ struct NewProjectOrTaskSheet: View {
                             task.origin = self.projectSelection
                             self.projectSelection?.addToTasks(task)
                         }
-
                     }
-                        self.showingThisSheet = false
-                        
-                    
+                    self.showingThisSheet = false
                 }) {Text("Add").bold()}.disabled(!finishedEditing)
             )
         }
     }
 }
-
-//struct NewProjectSheet_Previews: PreviewProvider {
-////    @Binding var bind: Bool
-//
-//    static var previews: some View {
-//        return NewProjectSheet(showingThisSheet: Binding.constant(false))
-//    }
-//}
-
-//struct NewProjectSheet_Previews: PreviewProvider {
-//    
-//    @State var showingThisSheet = true
-//    static var previews: some View {
-//        NewProjectSheet(showingThisSheet: $showingThisSheet)
-//    }
-//}

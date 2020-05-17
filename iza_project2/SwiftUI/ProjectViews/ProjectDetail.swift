@@ -10,14 +10,12 @@ import SwiftUI
 
 struct ProjectDetail: View {
     @Environment(\.managedObjectContext) var managedObjectContext
-       @FetchRequest(entity: Project.entity(), sortDescriptors:[]) var projects: FetchedResults<Project>
-
-    var project: Project
-    let goal: LocalizedStringKey = "goal"
+//    @FetchRequest(entity: Project.entity(), sortDescriptors:[]) var projects: FetchedResults<Project>
     @State var showingNewProjectSheet = false
-    var body: some View {
-//        @NSManaged public var tasks: NSSet?
 
+    // MARK: input to this view
+    var project: Project
+    var body: some View {
         NavigationView {
             Form {
                 VStack(alignment: .leading) {
@@ -63,11 +61,3 @@ struct ProjectDetail: View {
     }
 }
 
-//struct ProjectDetail_Previews: PreviewProvider {
-//    static var previews: some View {
-//        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-//        return ProjectDetail(project: projectExample).environment(\.managedObjectContext, context)
-//
-//        return ProjectDetail(project: projectExample)
-//    }
-//}

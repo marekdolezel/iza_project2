@@ -59,14 +59,11 @@ struct ProjectsAndTasksView: View {
                             }
                         } else {
                             if !projects.isEmpty {
-
-                                // problem here
                                 Form {
                                     ForEach(projects, id:\.id) { projectItem in
                                         Section(header:
                                             HStack {
                                                 Rectangle()
-//                                                    .fill(projectItem.color)
                                                     .frame(width: 5.0)
                                                 HStack(alignment: .center) {
                                                     Text("Project name").bold()
@@ -75,7 +72,9 @@ struct ProjectsAndTasksView: View {
                                         }) {
                                             if !projectItem.taskArray.isEmpty {
                                                 ForEach(projectItem.taskArray, id:\.id) { taskItem in
-                                                    TaskRow(task: taskItem)
+                                                    NavigationLink(destination: TaskDetail(task:taskItem)) {
+                                                            TaskRow(task: taskItem)
+                                                    }
                                                 }
                                             }
                                             else {
@@ -93,14 +92,10 @@ struct ProjectsAndTasksView: View {
                                         }
                                     }
                                 }
-                                // end problem here
-
                             } else {
                                 ProjectsAndTasksEmptySubView(selectorIndex: selectorIndex)
                             }
-
                         }
-                        // end: comment here to stop crashing
                     }
                     .navigationBarTitle("Projects and Tasks", displayMode: .inline)
         }
@@ -120,28 +115,4 @@ struct ProjectsAndTasksEmptySubView: View {
         }.scaledToFill()
     }
 }
-func generateProject(_ context: NSManagedObjectContext) -> Project {
-    let project = Project(context: context)
-    project.id = UUID()
-    project.name = UUID().uuidString
-    project.urgency = true
-    project.desc = UUID().uuidString
-    project.dueDate = Date()
-    project.isFinished = false
-    return project
-}
-//struct ProjectsAndTasksView_Previews: PreviewProvider {
-//
-//
-//
-//    static var previews: some View {
-//        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-//        var projects = [Project]()
-//        for _ in 1...10 {
-//            projects.append(generateProject(context))
-//        }
-////                 DetailView(event: newEvent).environment(\.managedObjectContext, context)
-//
-//            return ProjectsAndTasksView(projects: projects).environment(\.managedObjectContext, context)
-//    }
-//}
+

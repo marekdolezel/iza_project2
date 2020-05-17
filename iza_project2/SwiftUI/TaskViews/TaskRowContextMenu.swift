@@ -21,24 +21,11 @@ struct TaskRowContextMenu: View {
             }) {
                 HStack {
                     Text("Mark as done")
-                    Image(systemName: "star")
+                    Image(systemName: "checkmark.circle")
                 }
             }
-            Button(action: {}) {
-                HStack {
-                    Text("Pick this task (deprecated)")
-                    Image(systemName: "star")
-                }
-            }
+            
             
         }
     }
 }
-//
-//struct TaskListItemContextMenu_Previews: PreviewProvider {
-//    static var previews: some View {
-//        let taskExample = Task(name: "research of microbiology", description: "dsc", priority: 1, urgency: true, dueDate: Date(), isFinished: true)
-//
-//        return Text("long press on me").contextMenu { TaskRowContextMenu(task: taskExample) }
-//    }
-//}

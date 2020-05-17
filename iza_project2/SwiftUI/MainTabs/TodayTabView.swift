@@ -7,29 +7,27 @@
 //
 
 import SwiftUI
+import CoreData
 
+// this tab shows all tasks that are stored in application
+
+// when we use ForEach to iterate over tasks, taskItem is of type View
+// I have not figured out how to get from taskItem:View to task:Task
+// taskItem is only
 struct TodayTabView: View {
     @Environment(\.managedObjectContext) var managedObjectContext
     @FetchRequest(entity: Project.entity(), sortDescriptors:[]) var projects: FetchedResults<Project>
-    @FetchRequest(entity: Task.entity(), sortDescriptors:[]) var tasks: FetchedResults<Task>
     
-  
+    var nextDate = Calendar.current.date(byAdding: .day, value: 7, to: Date())
 
     var body: some View {
         NavigationView {
-//            NavigationLink(destination: NewProjectSheet()) {
-//                Text("New project")
-//            }
-                
-                  
             Form {
                 ForEach(projects, id:\.id) { project in
                     ForEach(project.taskArray, id:\.id) { taskItem in
-//                        if displayInTodayTab(input: taskItem) == true {
                         NavigationLink(destination: TaskDetail(task:taskItem)) {
                                 TaskRow(task: taskItem)
                         }
-//                        }
                     }
                 }
             }
@@ -38,8 +36,3 @@ struct TodayTabView: View {
     }
 }
 
-//struct TodayTabView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        TodayTabView()
-//    }
-//}

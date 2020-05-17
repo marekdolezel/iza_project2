@@ -17,28 +17,18 @@ struct MainTabBar: View {
     var body: some View {
         TabView {
             // Today's Tab
-            TodayTabView().tabItem {
-                TabBarElement(text:"Today", iconName: "clock").environment(\.locale, .init(identifier: "cs"))
-            }.tag(1)
-
-            // Week Tab
-            WeekTabView()
+            TodayTabView()
                 .environment(\.managedObjectContext, managedObjectContext)
                 .tabItem {
-                TabBarElement(text:"This Week", iconName: "7.circle")
-            }.tag(2)
-
-            // Month Tab
-            MonthTabView().tabItem {
-                TabBarElement(text:"This Month", iconName: "calendar.circle")
-            }.tag(3)
+                    TabBarElement(text:"Today", iconName: "clock")
+                }.tag(1)
 
             // Projects and Tasks Tab
             ProjectsAndTasksView()
                 .environment(\.managedObjectContext, managedObjectContext)
                 .tabItem {
-                TabBarElement(text:"Projects and Tasks", iconName: "calendar.circle")
-            }.tag(4)
+                    TabBarElement(text:"Projects and Tasks", iconName: "calendar.circle")
+                }.tag(2)
         }
     }
 }
@@ -54,9 +44,3 @@ struct TabBarElement: View {
         }
     }
 }
-//
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//         MainTabBar()
-//    }
-//}
