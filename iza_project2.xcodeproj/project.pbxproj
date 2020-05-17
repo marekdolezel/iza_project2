@@ -63,10 +63,10 @@
 		EA6419E0246EBFEE00B500D3 /* ProjectRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectRow.swift; sourceTree = "<group>"; };
 		EA6419E2246EC0ED00B500D3 /* ProjectDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetail.swift; sourceTree = "<group>"; };
 		EAB3116A2470BA5200B853BC /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/LocalizedCzech.strings; sourceTree = "<group>"; };
-		EACB0E5A2470812A001E38E6 /* Project+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		EACB0E5B2470812A001E38E6 /* Project+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		EACB0E5C2470812A001E38E6 /* Task+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		EACB0E5D2470812A001E38E6 /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		EACB0E5A2470812A001E38E6 /* Project+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Project+CoreDataClass.swift"; path = "iza_project2/CoreData/Project+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		EACB0E5B2470812A001E38E6 /* Project+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Project+CoreDataProperties.swift"; path = "iza_project2/CoreData/Project+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		EACB0E5C2470812A001E38E6 /* Task+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Task+CoreDataClass.swift"; path = "iza_project2/CoreData/Task+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		EACB0E5D2470812A001E38E6 /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Task+CoreDataProperties.swift"; path = "iza_project2/CoreData/Task+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		EAF9E1E4246D967100A70B91 /* Tasker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAF9E1E7246D967100A70B91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAF9E1E9246D967100A70B91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 			path = ProjectViews;
 			sourceTree = "<group>";
 		};
-		EACB0E4B24706841001E38E6 /* CoreData */ = {
+		EA6FBB3F2471D57F00A19705 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
 				EACB0E5A2470812A001E38E6 /* Project+CoreDataClass.swift */,
@@ -198,7 +198,7 @@
 		EAF9E1E6246D967100A70B91 /* iza_project2 */ = {
 			isa = PBXGroup;
 			children = (
-				EACB0E4B24706841001E38E6 /* CoreData */,
+				EA6FBB3F2471D57F00A19705 /* CoreData */,
 				EA6419CA246DDE2400B500D3 /* SwiftUI */,
 				EAF9E1E7246D967100A70B91 /* AppDelegate.swift */,
 				EAF9E1E9246D967100A70B91 /* SceneDelegate.swift */,

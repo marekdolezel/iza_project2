@@ -1,0 +1,104 @@
+/* 
+  czech.strings
+  iza_project2
+
+  Created by Marek Dolezel on 5/17/20.
+  Copyright © 2020 Marek Dolezel. All rights reserved.
+*/
+/* No comment provided by engineer. */
+"%@" = "%@";
+
+/* No comment provided by engineer. */
+"%@ project has no tasks" = "%@ project has no tasks";
+
+/* No comment provided by engineer. */
+"23.2.2019" = "23.2.2019";
+
+/* No comment provided by engineer. */
+"add" = "add";
+
+/* No comment provided by engineer. */
+"Add" = "Add";
+
+/* No comment provided by engineer. */
+"add project" = "add project";
+
+/* No comment provided by engineer. */
+"Cancel" = "Zrusit";
+
+/* No comment provided by engineer. */
+"CoreData Hello" = "CoreData Hello";
+
+/* No comment provided by engineer. */
+"Create new task" = "Create new task";
+
+/* No comment provided by engineer. */
+"Description" = "Description";
+
+/* No comment provided by engineer. */
+"Due" = "Due";
+
+/* No comment provided by engineer. */
+"Edit" = "Editovat";
+
+/* No comment provided by engineer. */
+"Hello list" = "Hello list";
+
+/* No comment provided by engineer. */
+"Hello, World!" = "Hello, World!";
+
+/* No comment provided by engineer. */
+"Is Finished?" = "Is Finished?";
+
+/* No comment provided by engineer. */
+"long press on me" = "long press on me";
+
+/* No comment provided by engineer. */
+"Mark as done" = "Mark as done";
+
+/* No comment provided by engineer. */
+"mothtab!" = "anglictina je super!";
+
+/* No comment provided by engineer. */
+"Name" = "Name";
+
+/* No comment provided by engineer. */
+"New project" = "New project";
+
+/* No comment provided by engineer. */
+"New Project" = "New Project";
+
+/* No comment provided by engineer. */
+"New Task" = "NOva uloha";
+
+/* No comment provided by engineer. */
+"no desc" = "no desc";
+
+/* No comment provided by engineer. */
+"Pick this task" = "Pick this task";
+
+/* No comment provided by engineer. */
+"Priority" = "Priority";
+
+/* No comment provided by engineer. */
+"Project Detail" = "Project Detail";
+
+/* No comment provided by engineer. */
+"projects are empty" = "projects are empty";
+
+/* No comment provided by engineer. */
+"Random" = "Random";
+
+/* No comment provided by engineer. */
+"Task Detail" = "Task Detail";
+
+/* No comment provided by engineer. */
+"Today's Tasks" = "Today's Tasks";
+
+/* No comment provided by engineer. */
+"Urgency" = "Urgency";
+
+/* No comment provided by engineer. */
+"wwswwo" = "wwswwo";
+
+"thisIsTrs" = "ted je to cesky";
