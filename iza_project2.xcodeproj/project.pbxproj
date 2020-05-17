@@ -7,15 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA6419C3246DDCFB00B500D3 /* TodayTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6419C2246DDCFB00B500D3 /* TodayTabView.swift */; };
+		EA6419C5246DDD1C00B500D3 /* WeekTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6419C4246DDD1C00B500D3 /* WeekTabView.swift */; };
+		EA6419C7246DDD3200B500D3 /* MonthTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6419C6246DDD3200B500D3 /* MonthTabView.swift */; };
+		EA6419C9246DDD4D00B500D3 /* ProjectsAndTasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6419C8246DDD4D00B500D3 /* ProjectsAndTasksView.swift */; };
+		EA6419CE246DE46D00B500D3 /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6419CD246DE46D00B500D3 /* TaskRow.swift */; };
+		EA6419D0246DE47B00B500D3 /* TaskDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6419CF246DE47B00B500D3 /* TaskDetail.swift */; };
+		EA6419D2246DE49700B500D3 /* TaskRowContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6419D1246DE49700B500D3 /* TaskRowContextMenu.swift */; };
+		EA6419D7246DE87400B500D3 /* NewProjectOrTaskSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6419D6246DE87400B500D3 /* NewProjectOrTaskSheet.swift */; };
+		EA6419E1246EBFEE00B500D3 /* ProjectRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6419E0246EBFEE00B500D3 /* ProjectRow.swift */; };
+		EA6419E3246EC0ED00B500D3 /* ProjectDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6419E2246EC0ED00B500D3 /* ProjectDetail.swift */; };
+		EAB311672470BA4400B853BC /* LocalizedCzech.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAB311692470BA4400B853BC /* LocalizedCzech.strings */; };
+		EACB0E5E2470812A001E38E6 /* Project+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACB0E5A2470812A001E38E6 /* Project+CoreDataClass.swift */; };
+		EACB0E5F2470812A001E38E6 /* Project+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACB0E5B2470812A001E38E6 /* Project+CoreDataProperties.swift */; };
+		EACB0E602470812A001E38E6 /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACB0E5C2470812A001E38E6 /* Task+CoreDataClass.swift */; };
+		EACB0E612470812A001E38E6 /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACB0E5D2470812A001E38E6 /* Task+CoreDataProperties.swift */; };
 		EAF9E1E8246D967100A70B91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9E1E7246D967100A70B91 /* AppDelegate.swift */; };
 		EAF9E1EA246D967100A70B91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9E1E9246D967100A70B91 /* SceneDelegate.swift */; };
 		EAF9E1ED246D967100A70B91 /* iza_project2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EAF9E1EB246D967100A70B91 /* iza_project2.xcdatamodeld */; };
-		EAF9E1EF246D967100A70B91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9E1EE246D967100A70B91 /* ContentView.swift */; };
+		EAF9E1EF246D967100A70B91 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9E1EE246D967100A70B91 /* MainTabBar.swift */; };
 		EAF9E1F1246D967500A70B91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAF9E1F0246D967500A70B91 /* Assets.xcassets */; };
 		EAF9E1F4246D967500A70B91 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAF9E1F3246D967500A70B91 /* Preview Assets.xcassets */; };
 		EAF9E1F7246D967500A70B91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAF9E1F5246D967500A70B91 /* LaunchScreen.storyboard */; };
 		EAF9E202246D967500A70B91 /* iza_project2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9E201246D967500A70B91 /* iza_project2Tests.swift */; };
 		EAF9E20D246D967500A70B91 /* iza_project2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9E20C246D967500A70B91 /* iza_project2UITests.swift */; };
+		EAFE3BD52471CAEA00E50F4A /* taskFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE3BD42471CAEA00E50F4A /* taskFilter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +52,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EAF9E1E4246D967100A70B91 /* iza_project2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iza_project2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA6419C2246DDCFB00B500D3 /* TodayTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTabView.swift; sourceTree = "<group>"; };
+		EA6419C4246DDD1C00B500D3 /* WeekTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekTabView.swift; sourceTree = "<group>"; };
+		EA6419C6246DDD3200B500D3 /* MonthTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthTabView.swift; sourceTree = "<group>"; };
+		EA6419C8246DDD4D00B500D3 /* ProjectsAndTasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsAndTasksView.swift; sourceTree = "<group>"; };
+		EA6419CD246DE46D00B500D3 /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
+		EA6419CF246DE47B00B500D3 /* TaskDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetail.swift; sourceTree = "<group>"; };
+		EA6419D1246DE49700B500D3 /* TaskRowContextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowContextMenu.swift; sourceTree = "<group>"; };
+		EA6419D6246DE87400B500D3 /* NewProjectOrTaskSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProjectOrTaskSheet.swift; sourceTree = "<group>"; };
+		EA6419E0246EBFEE00B500D3 /* ProjectRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectRow.swift; sourceTree = "<group>"; };
+		EA6419E2246EC0ED00B500D3 /* ProjectDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetail.swift; sourceTree = "<group>"; };
+		EAB3116A2470BA5200B853BC /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/LocalizedCzech.strings; sourceTree = "<group>"; };
+		EACB0E5A2470812A001E38E6 /* Project+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		EACB0E5B2470812A001E38E6 /* Project+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		EACB0E5C2470812A001E38E6 /* Task+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		EACB0E5D2470812A001E38E6 /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		EAF9E1E4246D967100A70B91 /* Tasker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAF9E1E7246D967100A70B91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAF9E1E9246D967100A70B91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EAF9E1EC246D967100A70B91 /* iza_project2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iza_project2.xcdatamodel; sourceTree = "<group>"; };
-		EAF9E1EE246D967100A70B91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EAF9E1EE246D967100A70B91 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		EAF9E1F0246D967500A70B91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAF9E1F3246D967500A70B91 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EAF9E1F6246D967500A70B91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +82,8 @@
 		EAF9E208246D967500A70B91 /* iza_project2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iza_project2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAF9E20C246D967500A70B91 /* iza_project2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iza_project2UITests.swift; sourceTree = "<group>"; };
 		EAF9E20E246D967500A70B91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAFE3BD32471C6F800E50F4A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EAFE3BD42471CAEA00E50F4A /* taskFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskFilter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +111,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA6419CA246DDE2400B500D3 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				EA6419DF246EBF9A00B500D3 /* ProjectViews */,
+				EA6419D5246DE85200B500D3 /* Sheets */,
+				EA6419CC246DE43F00B500D3 /* TaskViews */,
+				EA6419CB246DDE5F00B500D3 /* MainTabs */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		EA6419CB246DDE5F00B500D3 /* MainTabs */ = {
+			isa = PBXGroup;
+			children = (
+				EAF9E1EE246D967100A70B91 /* MainTabBar.swift */,
+				EA6419C2246DDCFB00B500D3 /* TodayTabView.swift */,
+				EA6419C4246DDD1C00B500D3 /* WeekTabView.swift */,
+				EA6419C6246DDD3200B500D3 /* MonthTabView.swift */,
+				EA6419C8246DDD4D00B500D3 /* ProjectsAndTasksView.swift */,
+			);
+			path = MainTabs;
+			sourceTree = "<group>";
+		};
+		EA6419CC246DE43F00B500D3 /* TaskViews */ = {
+			isa = PBXGroup;
+			children = (
+				EA6419CD246DE46D00B500D3 /* TaskRow.swift */,
+				EA6419CF246DE47B00B500D3 /* TaskDetail.swift */,
+				EA6419D1246DE49700B500D3 /* TaskRowContextMenu.swift */,
+			);
+			path = TaskViews;
+			sourceTree = "<group>";
+		};
+		EA6419D5246DE85200B500D3 /* Sheets */ = {
+			isa = PBXGroup;
+			children = (
+				EA6419D6246DE87400B500D3 /* NewProjectOrTaskSheet.swift */,
+			);
+			path = Sheets;
+			sourceTree = "<group>";
+		};
+		EA6419DF246EBF9A00B500D3 /* ProjectViews */ = {
+			isa = PBXGroup;
+			children = (
+				EA6419E0246EBFEE00B500D3 /* ProjectRow.swift */,
+				EA6419E2246EC0ED00B500D3 /* ProjectDetail.swift */,
+			);
+			path = ProjectViews;
+			sourceTree = "<group>";
+		};
+		EACB0E4B24706841001E38E6 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				EACB0E5A2470812A001E38E6 /* Project+CoreDataClass.swift */,
+				EACB0E5B2470812A001E38E6 /* Project+CoreDataProperties.swift */,
+				EACB0E5C2470812A001E38E6 /* Task+CoreDataClass.swift */,
+				EACB0E5D2470812A001E38E6 /* Task+CoreDataProperties.swift */,
+				EAF9E1EB246D967100A70B91 /* iza_project2.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		EAF9E1DB246D967100A70B91 = {
 			isa = PBXGroup;
 			children = (
+				EAFE3BD32471C6F800E50F4A /* README.md */,
+				EAB311692470BA4400B853BC /* LocalizedCzech.strings */,
 				EAF9E1E6246D967100A70B91 /* iza_project2 */,
 				EAF9E200246D967500A70B91 /* iza_project2Tests */,
 				EAF9E20B246D967500A70B91 /* iza_project2UITests */,
@@ -91,7 +188,7 @@
 		EAF9E1E5246D967100A70B91 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EAF9E1E4246D967100A70B91 /* iza_project2.app */,
+				EAF9E1E4246D967100A70B91 /* Tasker.app */,
 				EAF9E1FD246D967500A70B91 /* iza_project2Tests.xctest */,
 				EAF9E208246D967500A70B91 /* iza_project2UITests.xctest */,
 			);
@@ -101,14 +198,15 @@
 		EAF9E1E6246D967100A70B91 /* iza_project2 */ = {
 			isa = PBXGroup;
 			children = (
+				EACB0E4B24706841001E38E6 /* CoreData */,
+				EA6419CA246DDE2400B500D3 /* SwiftUI */,
 				EAF9E1E7246D967100A70B91 /* AppDelegate.swift */,
 				EAF9E1E9246D967100A70B91 /* SceneDelegate.swift */,
-				EAF9E1EE246D967100A70B91 /* ContentView.swift */,
 				EAF9E1F0246D967500A70B91 /* Assets.xcassets */,
 				EAF9E1F5246D967500A70B91 /* LaunchScreen.storyboard */,
 				EAF9E1F8246D967500A70B91 /* Info.plist */,
-				EAF9E1EB246D967100A70B91 /* iza_project2.xcdatamodeld */,
 				EAF9E1F2246D967500A70B91 /* Preview Content */,
+				EAFE3BD42471CAEA00E50F4A /* taskFilter.swift */,
 			);
 			path = iza_project2;
 			sourceTree = "<group>";
@@ -142,9 +240,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EAF9E1E3246D967100A70B91 /* iza_project2 */ = {
+		EAF9E1E3246D967100A70B91 /* Tasker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EAF9E211246D967500A70B91 /* Build configuration list for PBXNativeTarget "iza_project2" */;
+			buildConfigurationList = EAF9E211246D967500A70B91 /* Build configuration list for PBXNativeTarget "Tasker" */;
 			buildPhases = (
 				EAF9E1E0246D967100A70B91 /* Sources */,
 				EAF9E1E1246D967100A70B91 /* Frameworks */,
@@ -154,9 +252,9 @@
 			);
 			dependencies = (
 			);
-			name = iza_project2;
+			name = Tasker;
 			productName = iza_project2;
-			productReference = EAF9E1E4246D967100A70B91 /* iza_project2.app */;
+			productReference = EAF9E1E4246D967100A70B91 /* Tasker.app */;
 			productType = "com.apple.product-type.application";
 		};
 		EAF9E1FC246D967500A70B91 /* iza_project2Tests */ = {
@@ -225,13 +323,14 @@
 			knownRegions = (
 				en,
 				Base,
+				cs,
 			);
 			mainGroup = EAF9E1DB246D967100A70B91;
 			productRefGroup = EAF9E1E5246D967100A70B91 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EAF9E1E3246D967100A70B91 /* iza_project2 */,
+				EAF9E1E3246D967100A70B91 /* Tasker */,
 				EAF9E1FC246D967500A70B91 /* iza_project2Tests */,
 				EAF9E207246D967500A70B91 /* iza_project2UITests */,
 			);
@@ -245,6 +344,7 @@
 			files = (
 				EAF9E1F7246D967500A70B91 /* LaunchScreen.storyboard in Resources */,
 				EAF9E1F4246D967500A70B91 /* Preview Assets.xcassets in Resources */,
+				EAB311672470BA4400B853BC /* LocalizedCzech.strings in Resources */,
 				EAF9E1F1246D967500A70B91 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,9 +370,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA6419C5246DDD1C00B500D3 /* WeekTabView.swift in Sources */,
+				EA6419E1246EBFEE00B500D3 /* ProjectRow.swift in Sources */,
+				EA6419E3246EC0ED00B500D3 /* ProjectDetail.swift in Sources */,
+				EA6419D0246DE47B00B500D3 /* TaskDetail.swift in Sources */,
+				EA6419C7246DDD3200B500D3 /* MonthTabView.swift in Sources */,
+				EACB0E5E2470812A001E38E6 /* Project+CoreDataClass.swift in Sources */,
+				EACB0E602470812A001E38E6 /* Task+CoreDataClass.swift in Sources */,
 				EAF9E1E8246D967100A70B91 /* AppDelegate.swift in Sources */,
+				EACB0E612470812A001E38E6 /* Task+CoreDataProperties.swift in Sources */,
+				EACB0E5F2470812A001E38E6 /* Project+CoreDataProperties.swift in Sources */,
+				EA6419C9246DDD4D00B500D3 /* ProjectsAndTasksView.swift in Sources */,
+				EA6419C3246DDCFB00B500D3 /* TodayTabView.swift in Sources */,
+				EAFE3BD52471CAEA00E50F4A /* taskFilter.swift in Sources */,
 				EAF9E1ED246D967100A70B91 /* iza_project2.xcdatamodeld in Sources */,
-				EAF9E1EF246D967100A70B91 /* ContentView.swift in Sources */,
+				EAF9E1EF246D967100A70B91 /* MainTabBar.swift in Sources */,
+				EA6419D2246DE49700B500D3 /* TaskRowContextMenu.swift in Sources */,
+				EA6419D7246DE87400B500D3 /* NewProjectOrTaskSheet.swift in Sources */,
+				EA6419CE246DE46D00B500D3 /* TaskRow.swift in Sources */,
 				EAF9E1EA246D967100A70B91 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,17 +413,25 @@
 /* Begin PBXTargetDependency section */
 		EAF9E1FF246D967500A70B91 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EAF9E1E3246D967100A70B91 /* iza_project2 */;
+			target = EAF9E1E3246D967100A70B91 /* Tasker */;
 			targetProxy = EAF9E1FE246D967500A70B91 /* PBXContainerItemProxy */;
 		};
 		EAF9E20A246D967500A70B91 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EAF9E1E3246D967100A70B91 /* iza_project2 */;
+			target = EAF9E1E3246D967100A70B91 /* Tasker */;
 			targetProxy = EAF9E209246D967500A70B91 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		EAB311692470BA4400B853BC /* LocalizedCzech.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAB3116A2470BA5200B853BC /* cs */,
+			);
+			name = LocalizedCzech.strings;
+			sourceTree = "<group>";
+		};
 		EAF9E1F5246D967500A70B91 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -324,6 +447,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -384,6 +508,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -450,7 +575,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.marekdolezel.iza-project2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -470,7 +595,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.marekdolezel.iza-project2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -570,7 +695,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EAF9E211246D967500A70B91 /* Build configuration list for PBXNativeTarget "iza_project2" */ = {
+		EAF9E211246D967500A70B91 /* Build configuration list for PBXNativeTarget "Tasker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EAF9E212246D967500A70B91 /* Debug */,
