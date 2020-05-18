@@ -1,5 +1,5 @@
-#  Tasker
-<img src="./iza_project2/Assets.xcassets/task.imageset/task_1x.png" alt="drawing" width="20"/>
+#  <img src="./iza_project2/Assets.xcassets/task.imageset/task_1x.png" alt="drawing" width="40"/> Tasker
+
 
 Tasker is an application for managing projects and tasks written in swift for iOS. The source code is available from https://github.com/marekdolezel/iza_project2/tree/master/iza_project2
 
