@@ -16,6 +16,7 @@ Tasker is an application for managing projects and tasks written in swift for iO
 ## What does not work?
 - Automatic sorting of tasks to tabs (Today's, This Week, This Month )
 - Localization
+- Passtrough of @Environment (see https://bugs.swift.org/browse/SR-11607), you have to add .environment(..) after SubView() as a workaround 
 
 ## How to Use
 
