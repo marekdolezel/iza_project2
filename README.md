@@ -19,13 +19,13 @@ Tasker is an application for managing projects and tasks written in swift for iO
 
 ## How to Use
 
-### Creating new project
+### Creating new project <img src="./iza_project2/Assets.xcassets/project.imageset/project_1x.png" alt="drawing" width="40"/>
 - Go to 'Projects and Tasks' bar 
 - Click on 'New Project' at the top of the screen
 - You will be presented with a sheet where you need to fill in the following information: name, description. Additionally, you might want to specify due date and urgency. Just press on the flag and the project will be set to urgent. 
 - When you are done click 'Add'.
 
-### Creating new task
+### Creating new task <img src="./iza_project2/Assets.xcassets/task.imageset/project_1x.png" alt="drawing" width="40"/>
 - Go to 'Projects and Tasks' bar 
 - Click on a project you want to add the new task
 - You will be presented with Project Detail screen; scroll down to the end of this screen and click on 'Add new task'
