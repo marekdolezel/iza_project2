@@ -10,13 +10,13 @@ import SwiftUI
 
 struct ProjectDetail: View {
     @Environment(\.managedObjectContext) var managedObjectContext
-//    @FetchRequest(entity: Project.entity(), sortDescriptors:[]) var projects: FetchedResults<Project>
     @State var showingNewProjectSheet = false
 
-    // MARK: input to this view
+    // input to this view
     var project: Project
     var body: some View {
         NavigationView {
+            // MARK: Project Detail 
             Form {
                 VStack(alignment: .leading) {
                     Text("Name").bold()

@@ -9,8 +9,10 @@
 import SwiftUI
 
 struct TaskDetail: View {
-    var task: Task
     @State var showingNewProjectSheet = false
+    
+    // input to TaskDetail
+    var task: Task
 
     var body: some View {
         Form {
@@ -37,8 +39,12 @@ struct TaskDetail: View {
                     Spacer()
                     Image(systemName: task.urgency ? "flag.fill" : "flag")
                 }
-                
             }
+            VStack(alignment: .leading) {
+                Text("Finished?").bold()
+                Text(task.isFinished ? "Yes" : "No")
+            }
+            
             NavigationLink(destination: ProjectDetail(project:task.origin!)) {
                      VStack(alignment: .leading) {
                         Text("In project").bold()

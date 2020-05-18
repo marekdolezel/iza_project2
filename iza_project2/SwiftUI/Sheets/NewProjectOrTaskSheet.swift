@@ -72,8 +72,6 @@ struct NewProjectOrTaskSheet: View {
                                 }
                             }
                         }
-
-                        Text("there will be a picker, we have not passed project")
                     }
                 }
             }

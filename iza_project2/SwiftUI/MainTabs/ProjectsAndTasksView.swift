@@ -9,19 +9,18 @@
 import SwiftUI
 import CoreData
 struct ProjectsAndTasksView: View {
-//    @Binding var st: DataModel
-     @Environment(\.managedObjectContext) var managedObjectContext
-        @FetchRequest(entity: Project.entity(), sortDescriptors:[]) var projects: FetchedResults<Project>
-//        @FetchRequest(entity: Task.entity(), sortDescriptors:[]) var tasks: FetchedResults<Task>
+    @Environment(\.managedObjectContext) var managedObjectContext
+    @FetchRequest(entity: Project.entity(), sortDescriptors:[]) var projects: FetchedResults<Project>
+    
     @State var selectorIndex = 0
     @State var PickerOptions = ["Projects","Tasks"]
-
     @State var showingNewTaskSheet       = false
     @State var showingNewProjectSheet    = false
     
-//    @State var projects = store.getProjects()
-//    @State var haveProjects = store.haveProjects()
-
+    var projectsExist: Bool {
+        return !self.projects.isEmpty
+    }
+    
     var body: some View {
         NavigationView {
                     VStack {
@@ -41,15 +40,17 @@ struct ProjectsAndTasksView: View {
                                         NewProjectOrTaskSheet(showingThisSheet: self.$showingNewProjectSheet, showingProjectTorTaskF: self.selectorIndex==0 ? true : false, projectItem: nil)
                                             .environment(\.managedObjectContext, self.managedObjectContext)
                                     }
+                                    .disabled(!projectsExist && selectorIndex == 1) // Cannot create new task when no projects exist
                         }
                         Spacer()
-                        // comment here to stop crashing,  projects.isEmpty je True
                         if selectorIndex == 0 {
+                            // show all existing projects, or a message 'No Projects'if no projects are created
                             if !projects.isEmpty {
                                 Form {
                                     ForEach(projects, id:\.id) { projectItem in
                                         NavigationLink(destination: ProjectDetail(project: projectItem)) {
                                             ProjectRow(project: projectItem)
+                                                .environment(\.managedObjectContext, self.managedObjectContext)
                                         }
                                     }
                                 }
@@ -58,6 +59,8 @@ struct ProjectsAndTasksView: View {
                                 ProjectsAndTasksEmptySubView(selectorIndex: selectorIndex)
                             }
                         } else {
+                            // show all existing projects as sections and tasks as items of table,
+                            // or a message 'No Tasks' if projects and tasks were not created yet
                             if !projects.isEmpty {
                                 Form {
                                     ForEach(projects, id:\.id) { projectItem in
@@ -74,6 +77,7 @@ struct ProjectsAndTasksView: View {
                                                 ForEach(projectItem.taskArray, id:\.id) { taskItem in
                                                     NavigationLink(destination: TaskDetail(task:taskItem)) {
                                                             TaskRow(task: taskItem)
+                                                                .environment(\.managedObjectContext, self.managedObjectContext)
                                                     }
                                                 }
                                             }
@@ -102,6 +106,8 @@ struct ProjectsAndTasksView: View {
     }
                   
 }
+
+// MARK: ProjectsAndTasksEmptySubView
 
 struct ProjectsAndTasksEmptySubView: View {
     @State var selectorIndex: Int

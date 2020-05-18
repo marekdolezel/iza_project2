@@ -18,9 +18,8 @@ struct TodayTabView: View {
     @Environment(\.managedObjectContext) var managedObjectContext
     @FetchRequest(entity: Project.entity(), sortDescriptors:[]) var projects: FetchedResults<Project>
     
-    var nextDate = Calendar.current.date(byAdding: .day, value: 7, to: Date())
-
     var body: some View {
+        // MARK: Today Tab
         NavigationView {
             Form {
                 ForEach(projects, id:\.id) { project in

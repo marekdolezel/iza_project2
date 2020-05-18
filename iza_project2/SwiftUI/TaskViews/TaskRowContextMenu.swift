@@ -17,11 +17,21 @@ struct TaskRowContextMenu: View {
     var body: some View {
         VStack {
             Button(action: {
-                
+                self.task.isFinished = true
             }) {
                 HStack {
                     Text("Mark as done")
                     Image(systemName: "checkmark.circle")
+                }
+            }
+            
+            Button(action: {
+                self.task.origin!.removeFromTasks(self.task)
+                self.managedObjectContext.delete(self.task)
+            }) {
+                HStack {
+                    Text("Delete task")
+                    Image(systemName: "delete.left")
                 }
             }
             

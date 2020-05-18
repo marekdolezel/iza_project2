@@ -16,14 +16,14 @@ struct MainTabBar: View {
    
     var body: some View {
         TabView {
-            // Today's Tab
+            // MARK: Today's Tab
             TodayTabView()
                 .environment(\.managedObjectContext, managedObjectContext)
                 .tabItem {
                     TabBarElement(text:"Today", iconName: "clock")
                 }.tag(1)
 
-            // Projects and Tasks Tab
+            // MARK: Projects and Tasks Tab
             ProjectsAndTasksView()
                 .environment(\.managedObjectContext, managedObjectContext)
                 .tabItem {
@@ -33,6 +33,7 @@ struct MainTabBar: View {
     }
 }
 
+// MARK: TabBarElement
 struct TabBarElement: View {
     let text: String
     let iconName: String

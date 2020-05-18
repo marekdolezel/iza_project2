@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EA6419C3246DDCFB00B500D3 /* TodayTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6419C2246DDCFB00B500D3 /* TodayTabView.swift */; };
-		EA6419C5246DDD1C00B500D3 /* WeekTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6419C4246DDD1C00B500D3 /* WeekTabView.swift */; };
-		EA6419C7246DDD3200B500D3 /* MonthTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6419C6246DDD3200B500D3 /* MonthTabView.swift */; };
 		EA6419C9246DDD4D00B500D3 /* ProjectsAndTasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6419C8246DDD4D00B500D3 /* ProjectsAndTasksView.swift */; };
 		EA6419CE246DE46D00B500D3 /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6419CD246DE46D00B500D3 /* TaskRow.swift */; };
 		EA6419D0246DE47B00B500D3 /* TaskDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6419CF246DE47B00B500D3 /* TaskDetail.swift */; };
@@ -31,7 +29,6 @@
 		EAF9E1F7246D967500A70B91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAF9E1F5246D967500A70B91 /* LaunchScreen.storyboard */; };
 		EAF9E202246D967500A70B91 /* iza_project2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9E201246D967500A70B91 /* iza_project2Tests.swift */; };
 		EAF9E20D246D967500A70B91 /* iza_project2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9E20C246D967500A70B91 /* iza_project2UITests.swift */; };
-		EAFE3BD52471CAEA00E50F4A /* taskFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE3BD42471CAEA00E50F4A /* taskFilter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +50,6 @@
 
 /* Begin PBXFileReference section */
 		EA6419C2246DDCFB00B500D3 /* TodayTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTabView.swift; sourceTree = "<group>"; };
-		EA6419C4246DDD1C00B500D3 /* WeekTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekTabView.swift; sourceTree = "<group>"; };
-		EA6419C6246DDD3200B500D3 /* MonthTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthTabView.swift; sourceTree = "<group>"; };
 		EA6419C8246DDD4D00B500D3 /* ProjectsAndTasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsAndTasksView.swift; sourceTree = "<group>"; };
 		EA6419CD246DE46D00B500D3 /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
 		EA6419CF246DE47B00B500D3 /* TaskDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetail.swift; sourceTree = "<group>"; };
@@ -83,7 +78,6 @@
 		EAF9E20C246D967500A70B91 /* iza_project2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iza_project2UITests.swift; sourceTree = "<group>"; };
 		EAF9E20E246D967500A70B91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAFE3BD32471C6F800E50F4A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		EAFE3BD42471CAEA00E50F4A /* taskFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskFilter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,8 +121,6 @@
 			children = (
 				EAF9E1EE246D967100A70B91 /* MainTabBar.swift */,
 				EA6419C2246DDCFB00B500D3 /* TodayTabView.swift */,
-				EA6419C4246DDD1C00B500D3 /* WeekTabView.swift */,
-				EA6419C6246DDD3200B500D3 /* MonthTabView.swift */,
 				EA6419C8246DDD4D00B500D3 /* ProjectsAndTasksView.swift */,
 			);
 			path = MainTabs;
@@ -206,7 +198,6 @@
 				EAF9E1F5246D967500A70B91 /* LaunchScreen.storyboard */,
 				EAF9E1F8246D967500A70B91 /* Info.plist */,
 				EAF9E1F2246D967500A70B91 /* Preview Content */,
-				EAFE3BD42471CAEA00E50F4A /* taskFilter.swift */,
 			);
 			path = iza_project2;
 			sourceTree = "<group>";
@@ -370,11 +361,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA6419C5246DDD1C00B500D3 /* WeekTabView.swift in Sources */,
 				EA6419E1246EBFEE00B500D3 /* ProjectRow.swift in Sources */,
 				EA6419E3246EC0ED00B500D3 /* ProjectDetail.swift in Sources */,
 				EA6419D0246DE47B00B500D3 /* TaskDetail.swift in Sources */,
-				EA6419C7246DDD3200B500D3 /* MonthTabView.swift in Sources */,
 				EACB0E5E2470812A001E38E6 /* Project+CoreDataClass.swift in Sources */,
 				EACB0E602470812A001E38E6 /* Task+CoreDataClass.swift in Sources */,
 				EAF9E1E8246D967100A70B91 /* AppDelegate.swift in Sources */,
@@ -382,7 +371,6 @@
 				EACB0E5F2470812A001E38E6 /* Project+CoreDataProperties.swift in Sources */,
 				EA6419C9246DDD4D00B500D3 /* ProjectsAndTasksView.swift in Sources */,
 				EA6419C3246DDCFB00B500D3 /* TodayTabView.swift in Sources */,
-				EAFE3BD52471CAEA00E50F4A /* taskFilter.swift in Sources */,
 				EAF9E1ED246D967100A70B91 /* iza_project2.xcdatamodeld in Sources */,
 				EAF9E1EF246D967100A70B91 /* MainTabBar.swift in Sources */,
 				EA6419D2246DE49700B500D3 /* TaskRowContextMenu.swift in Sources */,
